@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Resultado{% endblock %}
+
+{% block content %}
+    <h2>Datos Enviados</h2>
+    <p><strong>Nombre:</strong> {{ nombre }}</p>
+    <p><strong>Teléfono:</strong> {{ telefono }}</p>
+    <p><strong>Correo Electrónico:</strong> {{ correo }}</p>
+    <a href="{{ url_for('formulario') }}">Volver al formulario</a>
+{% endblock %}

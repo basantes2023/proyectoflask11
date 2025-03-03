@@ -1,0 +1,127 @@
+/* Diseño general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centra el texto de todo el body */
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Formulario */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos dentro del formulario */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: center; /* Centra los textos de etiquetas */
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: center; /* Centra las etiquetas */
+}
+
+/* Estilo de los campos de entrada */
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    text-align: center; /* Centra el texto dentro de los inputs */
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Mensajes de error */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center; /* Centra los mensajes de error */
+}
+
+/* Botón de enviar */
+.btn-submit {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para mensajes flash */
+.flash-message {
+    padding: 10px;
+    background-color: #d4edda;
+    border-radius: 4px;
+    margin-top: 20px;
+    color: #155724;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Estilo para centrar el formulario */
+.form-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación para el formulario */
+.form-container {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animación para mensajes de éxito */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
